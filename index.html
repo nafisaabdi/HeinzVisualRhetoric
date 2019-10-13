@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial;}
 
@@ -9,7 +7,7 @@ body {font-family: Arial;}
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #92EDE5;
 }
 
 /* Style the buttons inside the tab */
@@ -45,32 +43,32 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
+<h2>Jamila's Henna Store</h2>
+<p>Here to meet all your Henna needs for any occasion.</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="opentab(event, 'About Us')">About Us</button>
+  <button class="tablinks" onclick="opentab(event, 'Henna Styles')">Henna Styles</button>
+  <button class="tablinks" onclick="opentab(event, 'Pricing')">Pricing</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="About Us" class="tabcontent">
+  <h3>About Us</h3>
+  <p>We are a Henna Store based in Minneapolis within the Karmel Store. We add to the vibrant Somali Community and are excited to... </p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
+<div id="Henna Styles" class="tabcontent">
+  <h3>Henna Styles</h3>
   <p>Paris is the capital of France.</p>
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
+<div id="Pricing" class="tabcontent">
+  <h3>Pricing</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function opentab(evt, tabname) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -80,7 +78,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
