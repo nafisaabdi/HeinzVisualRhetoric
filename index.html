@@ -1,104 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navigation Bar: Located at the top of the site -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Jamila's Henna Store</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About Us</a>
+      <a href="#products" class="w3-bar-item w3-button">Products & Pricing</a>
+      <a href="#designs" class="w3-bar-item w3-button">Henna Designs</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="bannerimage.jpg" alt="hennabannerimage" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Here to provide for all your Henna needs</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="art-artistic-beautiful-206448.jpg" class="w3-round w3-image w3-opacity-min" alt="HennaWomanImage" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Our Henna Store</h1><br>
+      <h5 class="w3-center">Tradition since 2003</h5>
+      <p class="w3-large">The Henna Store was founded in the early 2000's by Jamila. Her family migrated to Minnesota after fleeing the civil war in Somalia. Her family was able to thrive within the community using her enterpernural mindset. The dedication and time it takes to ensure quality within all the products is what Jamila stands for. The products used on clients are sourced from the best of ingredients that have undergone thurow testing. Additionally, every cutomer undergos an alergy test to ensure their health is always placed at the highest priority. Take a chance on us and we'll surely become your go to Henna spot!</p>
+  <h5 class="w3-center">Karmel Mall Location</h5>
+    <p class="w3-large">Jamila's Henna Store is located within the Karmel Mall. It is a Somali Mall full of culture and a hub of activity. The mall houses hundereds of stores and caters to the Minnesota Somali population. You'll find us on the third level of the mall in room 308. Stop by and enjoy the culture everyone's welcome!</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- prices and descriptions of all the different henna products-->
+  <div class="w3-row w3-padding-64" id="products">
+    <div class="w3-col l6 w3-padding-large">
+      <h1>Products & Pricing</h1><br>
+
+      <h4>Jamila's Henna Powder</h4>
+      <p class="w3-text-grey">Naturally crafted henna powder directly sourced from India $20.00</p><br>
+
+      <h4>Henna Oil</h4>
+      <p class="w3-text-grey">Rich henna certified morrocan oil $12.50</p><br>
+
+      <h4>Black Henna Mix</h4>
+      <p class="w3-text-grey">Non-traditional anti-toxin black henna $17.50</p><br>
+
+      <h4>Henna Pipping Kit</h4>
+      <p class="w3-text-grey">Henna Design starter kit $30.50</p><br>
+<h5> <p class="w3-text-grey"> <p class="w3-text-grey"> All products availble in store.</h5>
+
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="product.jpg" class="w3-round w3-image w3-opacity-min" alt="productimage" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+<!-- Image Section of Henna Designs -->
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #92EDE5;
+* {
+  box-sizing: border-box;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.column img:hover {
+  opacity: 1;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Style the tab content */
-.tabcontent {
+/* The expanding image container */
+.container {
+  position: relative;
   display: none;
-  padding: 14px 16px;
-  border: none #ccc;
-  border-top: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }
 </style>
 </head>
 <body>
 
-<h2>Jamila's Henna Store</h2>
-<p>Here to meet all your Henna needs for every occasion.</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="opentab(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="opentab(event, 'Designs')">Designs</button>
-  <button class="tablinks" onclick="opentab(event, 'Pricing')">Pricing</button>
-  <button class="tablinks" onclick="opentab(event, 'Location')">Location</button>
-  <button class="tablinks" onclick="opentab(event, 'Contact Us')">Contact Us</button>
+<div style="text-align:center">
+  <div class="w3-row w3-padding-64" id="designs">
+  <h2>Henna Designs</h2>
 </div>
 
-<div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>This will be the landing page. Testing things out.
-
-  <img src="product.jpg" alt="henna-product" width="350" height="400">
-</p>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="first.jpg" alt="HennaDesign" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="second.jpg" alt="HennaDesign" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="third.jpg" alt="HennaDesign" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="fourth.jpg" alt="HennaDesign" style="width:100%" onclick="myFunction(this);">
+  </div>
 </div>
 
-<div id="Designs" class="tabcontent">
-  <h3>Designs</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Pricing" class="tabcontent">
-  <h3>Pricing</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="Location" class="tabcontent">
-  <h3>Location</h3>
-  <p>We are a Henna Store based in Minneapolis within the Karmel Store. We add to the vibrant Somali Community and are excited to... </p>
-</div>
-
-<div id="Contact Us" class="tabcontent">
-  <h3>Contact Us</h3>
-  <p>You can reach us at...</p>
-</div>
-
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
 </div>
 
 <script>
-function opentab(evt, tabname) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabname).style.display = "block";
-  evt.currentTarget.className += " active";
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
 </script>
 
 </body>
-</html> 
+</html>
+
+
+<!-- End of Image Section -->
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact Us</h1><br>
+    <p class="w3-text-blue-grey w3-large"><b>2848 Pleasant Ave, Minneapolis, MN 55408</b></p>
+    <p>We offer full-service Henna Design for any event, large or small. We understand your needs and we will ensure that you are satisfied with our servce.</p>
+    <p>You can also contact us by phone at 651-553-2323 or email jamilashenna@gmail.com. Otherwise feel free to send us a message below:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="First & Last Name" required name="First & Last Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Email Address" required name="Email Address"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2019-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
