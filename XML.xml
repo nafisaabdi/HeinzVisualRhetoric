@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogue SYSTEM "Structured.dtd">
+<?xml-stylesheet type="text/css" href="index.html" ?>
+
+  <product_listing>
+   <product>
+       <product_name>Jamila's Henna Powder</product_name>
+       <product_price>$20</product_price>
+       <product_description>This product is...</product_description>
+       <shipping_cost>$4</shipping_cost>
+   </product>
+   <product>
+       <product_name>Henna Oil</product_name>
+       <product_price>$12.50</product_price>
+       <product_description>This product is...</product_description>
+       <shipping_cost>$4</shipping_cost>
+   </product>
+       <product_name>Black Henna Mix</product_name>
+       <product_price>$17.50</product_price>
+       <product_description>This product is...</product_description>
+       <shipping_cost>$4</shipping_cost>
+   <product>
+       <name>Henna Design Starter Kit</name>
+       <product_price>$30.50</product_price>
+       <product_description>This product is...</product_description>
+       <shipping_cost>$4</shipping_cost>
+   </product>
+</product_listing>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!ELEMENT product_listing (product+)>
+<!ELEMENT product (product_name, product_price, product_description, shipping_cost)>
+<!ATTLIST course subject (marketing|accounting|communication|programming|web_design
+<!ELEMENT product_name (#PCDATA)>
+<!ELEMENT product_price (#PCDATA)>
+<!ELEMENT product_description (#PCDATA)>
+<!ELEMENT shipping_cost (#PCDATA)>
+<!ELEMENT instructor (#PCDATA)>
