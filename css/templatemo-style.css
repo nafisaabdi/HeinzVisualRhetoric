@@ -1,8 +1,5 @@
 /*
 
-Next Level CSS Template
-
-https://templatemo.com/tm-532-next-level
 
 	COLORS:
 		Primary: #ca9acd
@@ -261,14 +258,14 @@ ul.tm-list-plus li:before {
   align-items: center;
   justify-content: center;
 }
-
+/* this is the Jamila home banner */
 .tm-welcome-parallax {
   min-height: 440px;
   background: transparent;
 }
-
+/* this is for the two images on the homepage */
 .tm-small-parallax {
-  min-height: 240px;
+  min-height: 450px;
   background: transparent;
 }
 
