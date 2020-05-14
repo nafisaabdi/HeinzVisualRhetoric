@@ -52,7 +52,6 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 /* ----------------------------------------------Header------------------------------------- */
 
 #header{padding:30px 0; font-family:Georgia, "Times New Roman", Times, serif;}
-#header #logo{display:block; float:left; width:300px; margin-top:7px;}
 #header #logo h1, #header #logo p{margin:0; padding:0; line-height:normal;}
 #header #logo h1{margin:0 0 10px 0; padding:0; font-size:36px; border:none;}
 #header h1 a{color:#3A6C86; background-color:#E3F1F9;}
